@@ -8,25 +8,37 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 const homeRoute = require('./routes/api/home');
+
 // MLB routes
-const mlbHomeRoute = require('./routes/api/mlb/home');
+const mlbHomeRoute = require("./routes/api/mlb/home");
+
 // NBA routes
-const nbaHomeRoute = require('./routes/api/nba/home');
-// NHL routes
-const nhlHomeRoute = require("./routes/api/nhl/home");
+const nbaHomeRoute = require("./routes/api/nba/home");
+const nbaTeamRoute = require("./routes/api/nba/team");
+const nbaPlayerRoute = require("./routes/api/nba/player");
+
 // NFL routes
 const nflHomeRoute = require("./routes/api/nfl/home");
 
+// NHL routes
+const nhlHomeRoute = require("./routes/api/nhl/home");
+
 // Use routes
 app.use("/api/home", homeRoute);
+
   // Use MLB routes
   app.use("/api/mlb/home", mlbHomeRoute);
+
   // Use NBA routes
   app.use("/api/nba/home", nbaHomeRoute);
-  // Use NHL routes
-  app.use("/api/nhl/home", nhlHomeRoute);
+  app.use("/api/nba/team", nbaTeamRoute);
+  app.use("/api/nba/player", nbaPlayerRoute);
+
   // Use NFL routes
   app.use("/api/nfl/home", nflHomeRoute);
+  
+  // Use NHL routes
+  app.use("/api/nhl/home", nhlHomeRoute);
 
 app.get('/', (req, res) => {
   res.redirect('/api/home');

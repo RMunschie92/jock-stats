@@ -9,8 +9,8 @@ class Navbar extends Component {
         <nav className="navbar">
           <Link to="/api/mlb/home">MLB</Link>
           <Link to="/api/nba/home">NBA</Link>
-          <h3>NHL</h3>
-          <h3>NFL</h3>
+          <Link to="/api/nhl/home">NHL</Link>
+          <Link to="/api/nfl/home">NFL</Link>          
         </nav>
       </div>
     )
