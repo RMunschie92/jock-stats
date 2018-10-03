@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class Home extends Component {
+class MlbHome extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome to Jock Stats</h1>
+        <p>This is the MlbHome component</p>
       </div>
     );
   }
 }
 
-export default Home;
+export default MlbHome;

@@ -1,35 +1,25 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/layout/Navbar';
+import MlbHome from './components/MlbHome';
+import NbaHome from './components/NbaHome';
+import Footer from './components/layout/Footer';
+import Home from './components/Home';
 import './App.css';
 
 class App extends Component {
-  state= {
-    data: null
-  };
-
-  componentDidMount() {
-    this.fetchData() 
-      .then(res => this.setState({ data: res.express }))
-      .catch(err => console.log(err));
-  }
-
-  fetchData = async () => {
-    const response = await fetch('/api/home');
-    const body = await response.json();
-
-    if (response.status !== 200) {
-      throw Error(body.message);
-    }
-    return body;
-  };
-
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">{this.state.data}</p>
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/api/mlb/home" component={MlbHome} />
+          <Route exact path="/api/nba/home" component={NbaHome} />
+          <Footer />
+        </div>
+      </Router>
+      
     );
   }
 }

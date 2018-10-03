@@ -1,0 +1,19 @@
+.NavbarComponent {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #222;
+  height: 50px;
+  padding: 4px;
+  color: white;
+}
