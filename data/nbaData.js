@@ -1,4 +1,4 @@
-const teamData = [
+const nbaTeamData = [
   {
     image:
       "https://res.cloudinary.com/munsch-creative/image/upload/v1530596755/atlanta_u8o8nz.png",
@@ -331,4 +331,4 @@ const teamData = [
   }
 ];
 
-module.exports = teamData;
+module.exports = nbaTeamData;

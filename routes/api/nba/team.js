@@ -5,11 +5,11 @@ const request = require("request");
 const password = "MYSPORTSFEEDS";
 const apiKey = "73a08190-f41f-4bda-becd-af5c5a";
 
-router.get("/", (req, res) => {
+router.get("/:id", (req, res) => {
   let urls = [
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/players.json?team=82`,
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/team_stats_totals.json?team=82`,
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/standings.json?team=82`
+    `https://api.mysportsfeeds.com/v2.0/pull/nba/players.json?team=${req.params.id}`,
+    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/team_stats_totals.json?team=${req.params.id}`,
+    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/standings.json?team=${req.params.id}`
   ];
   let auth = "Basic " + Buffer.from(apiKey + ":" + password).toString("base64");
   let completedRequests = 0;
