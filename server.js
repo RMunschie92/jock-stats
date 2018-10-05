@@ -21,6 +21,10 @@ const nbaTeamsRoute = require("./routes/api/nba/teams");
 
 // NFL routes
 const nflHomeRoute = require("./routes/api/nfl/home");
+const nflPlayerRoute = require("./routes/api/nfl/player");
+const nflPlayersRoute = require("./routes/api/nfl/players");
+const nflTeamRoute = require("./routes/api/nfl/team");
+const nflTeamsRoute = require("./routes/api/nfl/teams");
 
 // NHL routes
 const nhlHomeRoute = require("./routes/api/nhl/home");
@@ -40,7 +44,11 @@ app.use("/api/home", homeRoute);
 
   // Use NFL routes
   app.use("/api/nfl/home", nflHomeRoute);
-  
+  app.use("/api/nfl/player", nflPlayerRoute);
+  app.use("/api/nfl/players", nflPlayersRoute);
+  app.use("/api/nfl/team", nflTeamRoute);
+  app.use("/api/nfl/teams", nflTeamsRoute);
+
   // Use NHL routes
   app.use("/api/nhl/home", nhlHomeRoute);
 
