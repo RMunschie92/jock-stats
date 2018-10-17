@@ -5,11 +5,13 @@ const request = require("request");
 const password = "MYSPORTSFEEDS";
 const apiKey = "73a08190-f41f-4bda-becd-af5c5a";
 
-router.get("/:id", (req, res) => {
+const nhlTeamList = require("../../../data/nhlData");
+
+router.get("/", (req, res) => {
   let urls = [
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/players.json?team=${req.params.id}`,
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/team_stats_totals.json?team=${req.params.id}`,
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/2017-2018-regular/standings.json?team=${req.params.id}`
+    `https://api.mysportsfeeds.com/v2.0/pull/nba/players.json?team=11`, 
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/team_stats_totals.json?team=11`,
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/standings.json?team=11`
   ];
   let auth = "Basic " + Buffer.from(apiKey + ":" + password).toString("base64");
   let completedRequests = 0;
@@ -44,8 +46,7 @@ router.get("/:id", (req, res) => {
 
           let completedData = [];
 
-          // // loop through responses and push indices to completedData accordingly
-
+          // loop through responses and push indices to completedData accordingly
           for (let i = 0; i < responses.length; i++) {
             if (responses[i].hasOwnProperty('teamStatsTotals')) {
               completedData[0] = responses[i];
@@ -56,31 +57,32 @@ router.get("/:id", (req, res) => {
             else {
               completedData[2] = responses[i]
             }
-          }
+          };
 
           let teamStats = completedData[0].teamStatsTotals[0].stats;
           let rawRosterData = completedData[1].players;
           let teamStandings = completedData[2].teams[0];
 
-          // // set teamData
-          // // CHANGE TO FOR LOOP. MIGHT BE LESS EXPENSIVE?
-          // teamList.map(team => {
-          //   if (team.id == req.params.id) {
-          //     teamData = team;
-          //   }
-          // });
+          // assign teamData based on match of params.id
+          for (let i = 0; i < nhlTeamList.length; i++) {
+            // change to req.params.id after testing
+            if (nhlTeamList[i].id === 11) {
+              teamData = nhlTeamList;
+            }
+          };
 
-          // // push each player object into templateData if it has a jerseyNumber
+          // push each player object into templateData if it has a jerseyNumber
           rawRosterData.map(player => {
             if (player.player.jerseyNumber !== null) {
               roster.push(player.player);
             }
           });
 
-          res.json({ 
+          res.json({
             teamStats: teamStats,
             rawRosterData: rawRosterData,
-            teamStandings: teamStandings
+            teamStandings: teamStandings,
+            teamData: teamData
           });
         }
       });
