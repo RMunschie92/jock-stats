@@ -7,11 +7,11 @@ const apiKey = "73a08190-f41f-4bda-becd-af5c5a";
 
 const nhlTeamList = require("../../../data/nhlData");
 
-router.get("/", (req, res) => {
+router.get("/:id", (req, res) => {
   let urls = [
-    `https://api.mysportsfeeds.com/v2.0/pull/nba/players.json?team=11`, 
-    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/team_stats_totals.json?team=11`,
-    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/standings.json?team=11`
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/players.json?team=${req.params.id}&season=2018-2019-regular`, 
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/team_stats_totals.json?team=${req.params.id}`,
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/standings.json?team=${req.params.id}`
   ];
   let auth = "Basic " + Buffer.from(apiKey + ":" + password).toString("base64");
   let completedRequests = 0;
@@ -63,14 +63,6 @@ router.get("/", (req, res) => {
           let rawRosterData = completedData[1].players;
           let teamStandings = completedData[2].teams[0];
 
-          // assign teamData based on match of params.id
-          for (let i = 0; i < nhlTeamList.length; i++) {
-            // change to req.params.id after testing
-            if (nhlTeamList[i].id === 11) {
-              teamData = nhlTeamList;
-            }
-          };
-
           // push each player object into templateData if it has a jerseyNumber
           rawRosterData.map(player => {
             if (player.player.jerseyNumber !== null) {
@@ -80,9 +72,8 @@ router.get("/", (req, res) => {
 
           res.json({
             teamStats: teamStats,
-            rawRosterData: rawRosterData,
+            rawRosterData: roster,
             teamStandings: teamStandings,
-            teamData: teamData
           });
         }
       });

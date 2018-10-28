@@ -1,0 +1,11 @@
+.nhlEasternConference, .nhlWesternConference {
+  display: flex;
+}
+
+.division {
+  width: 40%;
+}
+
+ul {
+  list-style: none;
+}

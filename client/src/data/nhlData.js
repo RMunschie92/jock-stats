@@ -159,13 +159,13 @@ const nhlData = [
     id: 4,
     city: "Florida",
     name: "Panthers",
-    abbreviation:"FLO",
+    abbreviation: "FLO",
     conference: "Eastern",
     division: "Atlantic",
     established: 1993,
     homeVenue: {
       id: 3,
-      name: "BB&T Center" 
+      name: "BB&T Center"
     }
   },
   {
@@ -308,7 +308,7 @@ const nhlData = [
     established: 1967,
     homeVenue: {
       id: 24,
-      name: "Enterprise Center" 
+      name: "Enterprise Center"
     }
   },
   {
@@ -334,7 +334,7 @@ const nhlData = [
     established: 1992,
     homeVenue: {
       id: 26,
-      name: "Amalie Arena" 
+      name: "Amalie Arena"
     }
   },
   {

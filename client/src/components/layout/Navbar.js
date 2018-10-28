@@ -7,10 +7,10 @@ class Navbar extends Component {
     return (
       <div className="NavbarComponent">
         <nav className="navbar">
-          <Link to="/api/mlb/home">MLB</Link>
-          <Link to="/api/nba/home">NBA</Link>
-          <Link to="/api/nhl/home">NHL</Link>
-          <Link to="/api/nfl/home">NFL</Link>          
+          <Link to="/mlb/home">MLB</Link>
+          <Link to="/nba/home">NBA</Link>
+          <Link to="/nhl/home">NHL</Link>
+          <Link to="/nfl/home">NFL</Link>          
         </nav>
       </div>
     )
