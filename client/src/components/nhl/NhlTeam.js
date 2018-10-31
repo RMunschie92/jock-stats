@@ -28,7 +28,7 @@ class NhlTeam extends Component {
           standings: result.teamStandings,
           stats: result.teamStats
         });
-        console.log(this.state.data);
+        console.log(this.state.data); // DATA LOG
       }, error => {
         this.setState({ isLoaded: true, error });
       });

@@ -4,8 +4,14 @@ class NbaHome extends Component {
   constructor() {
     super();
     this.state = {
-      data: null,
-      error: null
+      error: null,
+      isLoaded: false,
+      atlantic: [],
+      central: [],
+      southeast: [],
+      northwest: [],
+      pacific: [],
+      southwest: []
     };
   }
 
@@ -14,7 +20,7 @@ class NbaHome extends Component {
   }
 
   fetchApi() {
-    fetch("/api/nba/home")
+    fetch("/api/nba/teams")
       .then(res => res.json())
       .then(
         result => {

@@ -18,7 +18,6 @@ class NhlHome extends Component {
 
   componentDidMount() {
     fetch('/api/nhl/teams')
-    // fetch("https://api.mysportsfeeds.com/v2.0/pull/nhl/players.)
       .then(res => res.json())
       .then(result => {
           this.setState({

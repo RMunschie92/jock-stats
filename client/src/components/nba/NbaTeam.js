@@ -3,27 +3,27 @@ import React, { Component } from "react";
 class NbaTeam extends Component {
   constructor() {
     super();
+    
     this.state = {
-      data: null,
-      error: null
+      error: null,
+      isLoaded: false,
+      data: "",
+      roster: "",
+      standings: "",
+      stats: "",
+      currentTeam: "",
+      venue: ""
     };
   }
 
   componentDidMount() {
-    this.fetchApi();
-  }
-
-  fetchApi() {
     fetch("/api/nba/team")
       .then(res => res.json())
-      .then(
-        result => {
+      .then(result => {
           console.log(result);
-        },
-        error => {
+        }, error => {
           this.setState({ isLoaded: true, error });
-        }
-      );
+        });
   }
 
   render() {
