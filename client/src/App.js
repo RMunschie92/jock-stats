@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/nba/team" component={NbaTeam} />
             <Route exact path="/nba/player" component={NbaPlayer} />
           <Route exact path="/nfl/home" component={NflHome} />
-            <Route exact path="/nfl/team" component={NflTeam} />
+            <Route exact path="/nfl/team/:id" component={NflTeam} />
             <Route exact path="/nfl/player" component={NflPlayer} />
           <Route exact path="/nhl/home" component={NhlHome} />
             <Route exact path="/nhl/team/:id" component={NhlTeam} />

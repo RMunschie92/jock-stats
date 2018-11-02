@@ -19,6 +19,7 @@ class NhlTeam extends Component {
 
   componentDidMount() {
     let teamId = this.props.match.params.id;
+    console.log(teamId);
     fetch(`/api/nhl/team/${teamId}`)
       .then(res => res.json())
       .then(result => {

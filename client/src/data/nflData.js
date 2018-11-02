@@ -74,7 +74,7 @@ const nflData = [
     established: 1919,
     homeVenue: {
       id: 48,
-      name: "Soldier Field" 
+      name: "Soldier Field"
     },
   },
   {
@@ -87,7 +87,7 @@ const nflData = [
     established: 1968,
     homeVenue: {
       id: 49,
-      name: "Paul Brown Stadium" 
+      name: "Paul Brown Stadium"
     }
   },
   {
@@ -191,7 +191,7 @@ const nflData = [
     established: 1993,
     homeVenue: {
       id: 57,
-      name: "EverBank Field" 
+      name: "EverBank Field"
     }
   },
   {
@@ -313,7 +313,7 @@ const nflData = [
   },
   {
     id: 74,
-    city:"Oakland",
+    city: "Oakland",
     name: "Radiers",
     abbreviation: "OAK",
     conference: "AFC",
@@ -347,7 +347,7 @@ const nflData = [
     established: 1933,
     homeVenue: {
       id: 66,
-      name: "Heinz Field" 
+      name: "Heinz Field"
     }
   },
   {
