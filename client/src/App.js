@@ -16,8 +16,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/mlb/home" component={MlbHome} />
+          <Route exact path="/" component={Home}  className="routeLink" />
+          <Route exact path="/mlb/home" component={MlbHome} className="routeLink" />
             <Route exact path="/mlb/team" component={MlbTeam} />
             <Route exact path="/mlb/player" component={MlbPlayer} />
           <Route exact path="/nba/home" component={NbaHome} />
