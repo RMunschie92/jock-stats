@@ -5,29 +5,33 @@ const request = require("request");
 const nhlTeamData = require('../../../data/nhlData');
 
 router.get("/", (req, res) => {
-  let metroDiv = [];
-  let atlanticDiv = [];
-  let centralDiv = [];
-  let pacificDiv = [];
+  let metroTeams = [];
+  let atlanticTeams = [];
+  let centralTeams = [];
+  let pacificTeams = [];
 
   for (let i = 0; i < nhlTeamData.length; i++) {
     let team = nhlTeamData[i];
     if (team.division === 'Metropolitan') {
-      metroDiv.push(team);
+      metroTeams.push(team);
     } else if (team.division === 'Atlantic') {
-      atlanticDiv.push(team);
+      atlanticTeams.push(team);
     } else if (team.division === 'Central') {
-      centralDiv.push(team);
+      centralTeams.push(team);
     } else {
-      pacificDiv.push(team);
+      pacificTeams.push(team);
     }
   }
 
+  let atlanticDiv = { name: 'Atlantic Division', teams: atlanticTeams };
+  let metroDiv = { name: 'Metropolitan Division', teams: metroTeams };
+  let centralDiv = { name: 'Central Division', teams: centralTeams };
+  let pacificDiv = { name: 'Pacific Division', teams: pacificTeams };
+
+  let conferences = [ { name: 'Eastern Conference', divisions: [ atlanticDiv, metroDiv ] }, { name: 'Western Conference', divisions: [ centralDiv, pacificDiv ] }];
+
   res.json({ 
-    metroDiv: metroDiv,
-    atlanticDiv: atlanticDiv,
-    centralDiv: centralDiv,
-    pacificDiv: pacificDiv
+    conferences: conferences
   });
 });
 

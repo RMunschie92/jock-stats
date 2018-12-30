@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../../styles/layout.css';
+import '../../styles/layout/Navbar.css';
 
 class Navbar extends Component {
   render() {
     return (
       <div className="NavbarComponent">
         <nav className="navbar">
-          <Link to="/mlb/home">MLB</Link>
-          <Link to="/nba/home">NBA</Link>
-          <Link to="/nhl/home">NHL</Link>
-          <Link to="/nfl/home">NFL</Link>          
+          <Link to="/mlb/home" className="navbarLink">MLB</Link>
+          <Link to="/nba/home" className="navbarLink">NBA</Link>
+          <Link to="/nhl/home" className="navbarLink">NHL</Link>
+          <Link to="/nfl/home" className="navbarLink">NFL</Link>          
         </nav>
       </div>
     )
