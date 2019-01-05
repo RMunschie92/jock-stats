@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import nhlTeamList from "../../data/nhlData"
+import '../../styles/common/team.css';
 
 class NhlTeam extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ class NhlTeam extends Component {
     let team = this.state.currentTeam;
     let venue = this.state.venue;
     return (
-      <div>
+      <div className="team">
         <h1>Nhl Team component</h1>
         <p>{team.city} {team.name}</p>
         <p>Established: {team.established}</p>

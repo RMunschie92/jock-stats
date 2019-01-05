@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Conference, Division } from '../common';
+import { Conference } from '../common';
 import '../../styles/nhl/nhlHome.css';
 import '../../styles/common/leagueHome.css';
 
@@ -21,19 +20,23 @@ class NhlHome extends Component {
       .then(result => {
           this.setState({
             conferences: result.conferences
-          });
+          }, console.log(result.conferences));
         }, error => {
           this.setState({ isLoaded: true, error });
         });
   }
 
   render() {
+
+    this.conferencesList = this.state.conferences.map((conference, index) => (
+      <Conference key={index} conference={conference} />
+    ))
+
     return (
       <div>
         <p>Welcome to Jock Stats NHL</p>
 
-        < Conference />
-        < Division />
+        {this.conferencesList}
 
       </div>
     ); 

@@ -1,7 +1,16 @@
 .NavbarComponent {
-  background-color: #222;
+  display: flex;
+  align-items: center;
   height: 100px;
+  background-color: #222;
   color: white;
+}
+
+.homeLink {
+  color: white;
+  text-decoration: none;
+  margin: 0 5em 0 2em;
+  font-size: 1.5em;
 }
 
 .navbar {
