@@ -19,16 +19,16 @@ class App extends Component {
           <Route exact path="/" component={Home}  className="routeLink" />
           <Route exact path="/mlb/home" component={MlbHome} className="routeLink" />
             <Route exact path="/mlb/team" component={MlbTeam} />
-            <Route exact path="/mlb/player" component={MlbPlayer} />
+            <Route exact path="/mlb/player/:id" component={MlbPlayer} />
           <Route exact path="/nba/home" component={NbaHome} />
             <Route exact path="/nba/team" component={NbaTeam} />
-            <Route exact path="/nba/player" component={NbaPlayer} />
+            <Route exact path="/nba/player/:id" component={NbaPlayer} />
           <Route exact path="/nfl/home" component={NflHome} />
             <Route exact path="/nfl/team/:id" component={NflTeam} />
-            <Route exact path="/nfl/player" component={NflPlayer} />
+            <Route exact path="/nfl/player/:id" component={NflPlayer} />
           <Route exact path="/nhl/home" component={NhlHome} />
             <Route exact path="/nhl/team/:id" component={NhlTeam} />
-            <Route exact path="/nhl/player" component={NhlPlayer} />
+            <Route exact path="/nhl/player/:id" component={NhlPlayer} />
         </div>
       </Router>
       

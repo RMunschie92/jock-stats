@@ -11,7 +11,7 @@ class Conference extends Component {
         ));
 
         return (
-            <div class="conference">
+            <div className="conference">
                 <h3 className="conferenceName">{this.props.conference.name}</h3>
                 <div className="conferenceList">
                     {this.divisionContainer}
