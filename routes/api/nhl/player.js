@@ -7,12 +7,12 @@ const apiKey = "73a08190-f41f-4bda-becd-af5c5a";
 
 const nhlTeamData = require("../../../data/nhlData");
 
-router.get("/", (req, res) => {
+router.get("/:id", (req, res) => {
   let teamName;
-  let teamData;
+  let teamData; 
   let urls = [
-    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json?player=brad-marchand`, 
-    `https://api.mysportsfeeds.com/v2.0/pull/nhl/players.json?player=brad-marchand`
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/2018-2019-regular/player_stats_totals.json?player=${req.params.id}`, 
+    `https://api.mysportsfeeds.com/v2.0/pull/nhl/players.json?player=${req.params.id}`
   ];
   let auth = "Basic " + Buffer.from(apiKey + ":" + password).toString("base64");
   let completedRequests = 0;
@@ -49,11 +49,16 @@ router.get("/", (req, res) => {
 
           // // get team name to send to view
           nhlTeamData.map(team => {
-            if (team.abbreviation == playerData.currentTeam.abbreviation.toLowerCase()) {
+            if (team.abbreviation == playerData.currentTeam.abbreviation) {
               teamData = team;
               teamName = team.city + ' ' + team.name;
             }
           });
+
+          console.log('playerStats', playerStats);
+          console.log('playerData: ', playerData);
+          console.log('teamData: ', teamData);
+          console.log('teamName: ', teamName);
 
           res.json({
             playerStats: playerStats,

@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const request = require("request");
+const moment = require('moment');
 
 const password = "MYSPORTSFEEDS";
 const apiKey = "73a08190-f41f-4bda-becd-af5c5a";
@@ -65,7 +66,7 @@ router.get("/:id", (req, res) => {
 
           // push each player object into templateData if it has a jerseyNumber
           rawRosterData.map(player => {
-            if (player.player.jerseyNumber !== null) {
+            if (player.player.currentRosterStatus === 'ROSTER') {
               roster.push(player.player);
             }
           });

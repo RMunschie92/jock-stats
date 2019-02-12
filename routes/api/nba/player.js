@@ -48,7 +48,7 @@ router.get("/", (req, res) => {
 
           // // get team name to send to view
           // teamList.map(team => {
-          //   if (team.abbreviation == playerData.currentTeam.abbreviation.toLowerCase()) {
+          //   if (team.abbreviation == playerData.currentTeam.abbreviation) {
           //     teamData = team;
           //     teamName = team.city + ' ' + team.name;
           //     teamLogo = team.image;
