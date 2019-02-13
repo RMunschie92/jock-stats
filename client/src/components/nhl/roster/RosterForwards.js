@@ -1,43 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
-import '../../styles/common/roster.css';
 
-class Roster extends Component {
+class RosterForwards extends Component {
     constructor(props) {
         super(props)
-
-        this.state = {
-            error: null,
-            isLoaded: false,
-            data: "",
-            roster: "",
-            standings: "",
-            stats: "",
-        }
-    }
-
-    componentDidMount() {
-        let teamId = this.props.teamId;
-        fetch(`/api/nhl/team/${teamId}`)
-          .then(res => res.json())
-          .then(result => {
-            this.setState({
-              data: result,
-              roster: result.rawRosterData,
-              standings: result.teamStandings,
-              stats: result.teamStats
-            });
-            console.log(this.state.data); // DATA LOG
-          }, error => {
-            this.setState({ isLoaded: true, error });
-          });
     }
 
     render() {
-        const roster = this.state.roster;
+        const players = this.props.players;
 
-        if (this.state.roster.length > 0) {
-            this.roster = roster.map((player, index) => (
+        if (players) {    
+            this.players = this.props.players.map((player, index) => (
                 <tr className="playerCell" key={index}>
                     <td className="large playerNameCol">
                         <Link
@@ -60,12 +33,12 @@ class Roster extends Component {
                     <td className="medium">{player.birthDate}</td>
                     <td className="large">{player.birthCity}, {player.birthCountry}</td>
                 </tr>
-            ))
+            ))   
         }
-       
+
         return (
             <div>
-                <h4>Roster Component</h4>
+                <h2>Forwards</h2>
                 <table className="rosterTable">
                     <tbody>
                         <tr className="tableHead">
@@ -78,7 +51,7 @@ class Roster extends Component {
                             <th className="medium">Born</th>
                             <th className="large">Birthplace</th>
                         </tr>
-                        {this.roster}   
+                        {this.players}   
                     </tbody>
                 </table>
             </div>
@@ -86,4 +59,4 @@ class Roster extends Component {
     }
 }
 
-export default Roster;
+export default RosterForwards;

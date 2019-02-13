@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Roster from './Roster';
+import Roster from '../nhl/Roster';
 import nhlTeamList from "../../data/nhlData"
 
 class Team extends Component {

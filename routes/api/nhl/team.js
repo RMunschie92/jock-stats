@@ -17,7 +17,10 @@ router.get("/:id", (req, res) => {
   let auth = "Basic " + Buffer.from(apiKey + ":" + password).toString("base64");
   let completedRequests = 0;
   let responses = [];
-  let roster = [];
+  // let roster = [];
+  let defense = [];
+  let forwards = [];
+  let goalies = [];
   let teamData;
 
   urls.forEach((url) => {
@@ -67,13 +70,24 @@ router.get("/:id", (req, res) => {
           // push each player object into templateData if it has a jerseyNumber
           rawRosterData.map(player => {
             if (player.player.currentRosterStatus === 'ROSTER') {
-              roster.push(player.player);
+              // push players into respective arrays based on position
+              if (player.player.primaryPosition === 'G') {
+                goalies.push(player.player)
+              } 
+              else if (player.player.primaryPosition === 'D') {
+                defense.push(player.player)
+              } 
+              else {
+                forwards.push(player.player);
+              }
             }
           });
 
           res.json({
             teamStats: teamStats,
-            rawRosterData: roster,
+            defense: defense,
+            forwards: forwards,
+            goalies: goalies,
             teamStandings: teamStandings,
           });
         }

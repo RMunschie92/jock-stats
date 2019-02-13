@@ -17,11 +17,9 @@ class Player extends Component {
 
     componentDidMount() {
         let playerId = this.props.playerId;
-        console.log(playerId);
     }
 
     render() {
-        console.log('props: ', this.props);
         return (
             <div>
                 <h2>Player Component</h2>
