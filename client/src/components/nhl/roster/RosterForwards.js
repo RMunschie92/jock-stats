@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
 class RosterForwards extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         const players = this.props.players;
 

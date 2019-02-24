@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Player from '../common/Player';
+import NhlPlayerSnapshot from './NhlPlayerSnapshot';
+import NhlPlayerStats from './NhlPlayerStats';
 import '../../styles/common/playerSnapshot.css';
 
 class NhlPlayer extends Component {
@@ -42,24 +44,13 @@ class NhlPlayer extends Component {
       const player = this.state.player;
       const stats = this.state.stats;
       const teamData = this.state.teamData;
-      const teamName = this.state.teamName;
       const playerImage = player.officialImageSrc ? player.officialImageSrc : 'https://res.cloudinary.com/munsch-creative/image/upload/v1549758569/AnonymousProfile_Icon_sqff2m.png';
 
       return (
         <div>
           <h1>Nhl Player component</h1>
-          // Make this a component 
-          <div className="playerSnapshot">
-            <img className="playerPhoto" src={playerImage} alt={player.firstName + ' ' + player.lastName}/>
-            <p>{player.firstName + ' ' + player.lastName} | #{player.jerseyNumber}</p>
-            <div className="snapshotInfo">
-              {player.primaryPosition} <span>|</span>
-              {player.height} <span>|</span>
-              {player.weight} lb <span>|</span>
-              Age: {player.age} <span>|</span>
-              {teamName}
-            </div>
-          </div>
+          <NhlPlayerSnapshot player={this.state.player} playerImage={playerImage} teamName={this.state.teamName}/>
+          <NhlPlayerStats stats={stats}/>
         </div>
       );
     }

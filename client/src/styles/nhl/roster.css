@@ -25,8 +25,12 @@
 .playerLink {
     display: flex;
     color: #111;
-    text-decoration: none;
+    text-decoration: none; 
     margin-left: 1.25em;
+}
+
+.playerLink:hover > .playerName {
+    text-decoration: underline;
 }
 
 .playerSmallPhoto {
