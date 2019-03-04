@@ -7,6 +7,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC West",
     established: 1898,
+    teamColor: "#97233F",
     homeVenue: {
       id: 43,
       name: "University of Phoenix Stadium"
@@ -20,6 +21,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC South",
     established: 1965,
+    teamColor: "#A71930",
     homeVenue: {
       id: 44,
       name: "Georgia Dome"
@@ -33,6 +35,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC North",
     established: 1996,
+    teamColor: "#241773",
     homeVenue: {
       id: 45,
       name: "M&T Bank Stadium"
@@ -46,6 +49,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC East",
     established: 1960,
+    teamColor: "#00338D",
     homeVenue: {
       id: 46,
       name: "New Era Field"
@@ -59,6 +63,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC South",
     established: 1993,
+    teamColor: "#0085CA",
     homeVenue: {
       id: 47,
       name: "Bank of America Stadium"
@@ -72,6 +77,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC North",
     established: 1919,
+    teamColor: "#C83803",
     homeVenue: {
       id: 48,
       name: "Soldier Field" 
@@ -85,6 +91,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC North",
     established: 1968,
+    teamColor: "#FB4F14",
     homeVenue: {
       id: 49,
       name: "Paul Brown Stadium" 
@@ -98,6 +105,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC North",
     established: 1946,
+    teamColor: "#FF3C00",
     homeVenue: {
       id: 50,
       name: "First Energy Stadium"
@@ -111,6 +119,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC East",
     established: 1960,
+    teamColor: "#041E42",
     homeVenue: {
       id: 51,
       name: "AT&T Stadium"
@@ -124,6 +133,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC West",
     established: 1960,
+    teamColor: "#FB4F14",
     homeVenue: {
       id: 52,
       name: "Sports Authority Field at Mile High"
@@ -137,6 +147,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC North",
     established: 1929,
+    teamColor: "#0076B6",
     homeVenue: {
       id: 53,
       name: "Ford Field"
@@ -150,6 +161,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC North",
     established: 1919,
+    teamColor: "#203731",
     homeVenue: {
       id: 54,
       name: "Lambeau Field"
@@ -163,6 +175,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC South",
     established: 2002,
+    teamColor: "#03202F",
     homeVenue: {
       id: 55,
       name: "NRG Stadium"
@@ -176,6 +189,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC South",
     established: 1953,
+    teamColor: "#002C5F",
     homeVenue: {
       id: 56,
       name: "Lucas Oil Stadium"
@@ -189,6 +203,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC South",
     established: 1993,
+    teamColor: "#D7A22A",
     homeVenue: {
       id: 57,
       name: "EverBank Field" 
@@ -202,9 +217,10 @@ const nflData = [
     conference: "AFC",
     division: "AFC West",
     established: 1960,
+    teamColor: "#E31837",
     homeVenue: {
       id: 58,
-      name: "Arrowhead Stadiu,"
+      name: "Arrowhead Stadium"
     }
   },
   {
@@ -215,6 +231,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC West",
     established: 1960,
+    teamColor: "#0080C6",
     homeVenue: {
       id: 140,
       name: "StubHub Center"
@@ -228,6 +245,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC West",
     established: 1936,
+    teamColor: "",
     homeVenue: {
       id: 74,
       name: "Los Angeles Memorial Coliseum"
@@ -241,6 +259,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC East",
     established: 1966,
+    teamColor: "#F26A24",
     homeVenue: {
       id: 59,
       name: "Hard Rock Stadium"
@@ -254,6 +273,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC North",
     established: 1961,
+    teamColor: "#4F2683",
     homeVenue: {
       id: 141,
       name: "US Bank Stadium"
@@ -267,6 +287,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC East",
     established: 1960,
+    teamColor: "#002244",
     homeVenue: {
       id: 61,
       name: "Gilette Stadium"
@@ -280,6 +301,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC South",
     established: 1967,
+    teamColor: "#101820",
     homeVenue: {
       id: 62,
       name: "Mercedes-Benz Stadium"
@@ -293,6 +315,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC East",
     established: 1925,
+    teamColor: "#0B2265",
     homeVenue: {
       id: 63,
       name: "MetLife Stadium"
@@ -306,6 +329,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC East",
     established: 1960,
+    teamColor: "#003F2D",
     homeVenue: {
       id: 63,
       name: "MetLife Stadium"
@@ -319,6 +343,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC West",
     established: 1960,
+    teamColor: "#000000",
     homeVenue: {
       id: 64,
       name: "Oakland-Alameda County Coliseum"
@@ -332,6 +357,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC East",
     established: 1933,
+    teamColor: "#004C54",
     homeVenue: {
       id: 65,
       name: "Lincoln Financial Field"
@@ -345,6 +371,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC North",
     established: 1933,
+    teamColor: "#FFB612",
     homeVenue: {
       id: 66,
       name: "Heinz Field" 
@@ -358,6 +385,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC West",
     established: 1946,
+    teamColor: "#AA0000",
     homeVenue: {
       id: 68,
       name: "Levi's Stadium"
@@ -371,6 +399,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC West",
     established: 1974,
+    teamColor: "#002244",
     homeVenue: {
       id: 69,
       name: "CenturyLink Field"
@@ -384,6 +413,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC South",
     established: 1976,
+    teamColor: "#D50A0A",
     homeVenue: {
       id: 71,
       name: "Raymond James Stadium"
@@ -397,6 +427,7 @@ const nflData = [
     conference: "AFC",
     division: "AFC South",
     established: 1960,
+    teamColor: "#0C2340",
     homeVenue: {
       id: 72,
       name: "Nissan Stadium"
@@ -410,6 +441,7 @@ const nflData = [
     conference: "NFC",
     division: "NFC East",
     established: 1932,
+    teamColor: "#773141",
     homeVenue: {
       id: 73,
       name: "FedEx Field"

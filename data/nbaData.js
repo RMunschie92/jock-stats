@@ -8,7 +8,12 @@ const nbaTeamData = [
     name: "Hawks",
     conference: "Eastern",
     division: "Southeast",
-    established: "1949"
+    established: "1949",
+    teamColor: "#E03A3E", 
+    homeVenue: {
+      id: null,
+      name: "State Farm Arena"
+    }
   },
   {
     image:
@@ -19,7 +24,12 @@ const nbaTeamData = [
     name: "Celtics",
     conference: "Eastern",
     division: "Atlantic",
-    established: "1946"
+    established: "1946",
+    teamColor: "#007A33", 
+    homeVenue: {
+      id: null,
+      name: "TD Garden"
+    }
   },
   {
     image:
@@ -30,7 +40,12 @@ const nbaTeamData = [
     name: "Nets",
     conference: "Eastern",
     division: "Atlantic",
-    established: "1976"
+    established: "1976",
+    teamColor: "#000000", 
+    homeVenue: {
+      id: null,
+      name: "Barclays Center"
+    }
   },
   {
     image:
@@ -41,7 +56,12 @@ const nbaTeamData = [
     name: "Hornets",
     conference: "Eastern",
     division: "Southeast",
-    established: "1988"
+    established: "1988",
+    teamColor: "#1D1160", 
+    homeVenue: {
+      id: null,
+      name: "Spectrum Center"
+    }
   },
   {
     image:
@@ -52,7 +72,12 @@ const nbaTeamData = [
     name: "Bulls",
     conference: "Eastern",
     division: "Central",
-    established: "1966"
+    established: "1966",
+    teamColor: "#CE1141", 
+    homeVenue: {
+      id: null,
+      name: "United Center"
+    }
   },
   {
     image:
@@ -63,7 +88,12 @@ const nbaTeamData = [
     name: "Cavaliers",
     conference: "Eastern",
     division: "Central",
-    established: "1970"
+    established: "1970",
+    teamColor: "#6F263D", 
+    homeVenue: {
+      id: null,
+      name: "Quicken Loans Arena"
+    }
   },
   {
     image:
@@ -74,7 +104,12 @@ const nbaTeamData = [
     name: "Mavericks",
     conference: "Western",
     division: "Southwest",
-    established: "1980"
+    established: "1980",
+    teamColor: "#00538C", 
+    homeVenue: {
+      id: null,
+      name: "American Airlines Center"
+    }
   },
   {
     image:
@@ -85,7 +120,12 @@ const nbaTeamData = [
     name: "Nuggets",
     conference: "Western",
     division: "Northwest",
-    established: "1976"
+    established: "1976",
+    teamColor: "#0E2240", 
+    homeVenue: {
+      id: null,
+      name: "Pepsi Center"
+    }
   },
   {
     image:
@@ -96,7 +136,12 @@ const nbaTeamData = [
     name: "Pistons",
     conference: "Eastern",
     division: "Central",
-    established: "1948"
+    established: "1948",
+    teamColor: "#C8102E", 
+    homeVenue: {
+      id: null,
+      name: "Little Caesars Arena"
+    }
   },
   {
     image:
@@ -107,7 +152,12 @@ const nbaTeamData = [
     name: "Warriors",
     conference: "Western",
     division: "Pacific",
-    established: "1946"
+    established: "1946",
+    teamColor: "#006BB6", 
+    homeVenue: {
+      id: null,
+      name: "Oracle Arena"
+    }
   },
   {
     image:
@@ -118,7 +168,12 @@ const nbaTeamData = [
     name: "Rockets",
     conference: "Western",
     division: "Southwest",
-    established: "1967"
+    established: "1967",
+    teamColor: "#006BB6", 
+    homeVenue: {
+      id: null,
+      name: "Toyota Center"
+    }
   },
   {
     image:
@@ -129,7 +184,12 @@ const nbaTeamData = [
     name: "Pacers",
     conference: "Eastern",
     division: "Central",
-    established: "1976"
+    established: "1976",
+    teamColor: "#FDBB30", 
+    homeVenue: {
+      id: null,
+      name: "Bankers Life Fieldhouse"
+    }
   },
   {
     image:
@@ -140,7 +200,12 @@ const nbaTeamData = [
     name: "Clippers",
     conference: "Western",
     division: "Pacific",
-    established: "1970"
+    established: "1970",
+    teamColor: "#1D42BA", 
+    homeVenue: {
+      id: null,
+      name: "Staples Center"
+    }
   },
   {
     image:
@@ -151,7 +216,12 @@ const nbaTeamData = [
     name: "Lakers",
     conference: "Western",
     division: "Pacific",
-    established: "1948"
+    established: "1948",
+    teamColor: "#552583", 
+    homeVenue: {
+      id: null,
+      name: "Staples Center"
+    }
   },
   {
     image:
@@ -162,7 +232,12 @@ const nbaTeamData = [
     name: "Grizzlies",
     conference: "Western",
     division: "Southwest",
-    established: "1995"
+    established: "1995",
+    teamColor: "#12173F", 
+    homeVenue: {
+      id: null,
+      name: "FedEx Forum"
+    }
   },
   {
     image:
@@ -173,7 +248,12 @@ const nbaTeamData = [
     name: "Heat",
     conference: "Eastern",
     division: "Southeast",
-    established: "1988"
+    established: "1988",
+    teamColor: "#98002E", 
+    homeVenue: {
+      id: null,
+      name: "American Airlines Center"
+    }
   },
   {
     image:
@@ -184,7 +264,12 @@ const nbaTeamData = [
     name: "Bucks",
     conference: "Eastern",
     division: "Central",
-    established: "1968"
+    established: "1968",
+    teamColor: "#00471B", 
+    homeVenue: {
+      id: null,
+      name: "Fiserv Forum"
+    }
   },
   {
     image:
@@ -195,7 +280,12 @@ const nbaTeamData = [
     name: "Timberwolves",
     conference: "Western",
     division: "Northwest",
-    established: "1989"
+    established: "1989",
+    teamColor: "#0C2340", 
+    homeVenue: {
+      id: null,
+      name: "Target Center"
+    }
   },
   {
     image:
@@ -206,7 +296,12 @@ const nbaTeamData = [
     name: "Pelicans",
     conference: "Western",
     division: "Southwest",
-    established: "2002"
+    established: "2002",
+    teamColor: "#0C2340", 
+    homeVenue: {
+      id: null,
+      name: "Smoothie King Center"
+    }
   },
   {
     image:
@@ -217,7 +312,12 @@ const nbaTeamData = [
     name: "Knicks",
     conference: "Eastern",
     division: "Atlantic",
-    established: "1946"
+    established: "1946",
+    teamColor: "#F58426", 
+    homeVenue: {
+      id: null,
+      name: "Madison Square Garden"
+    }
   },
   {
     image:
@@ -228,7 +328,12 @@ const nbaTeamData = [
     name: "Thunder",
     conference: "Western",
     division: "Northwest",
-    established: "1967"
+    established: "1967",
+    teamColor: "#EF3B24", 
+    homeVenue: {
+      id: null,
+      name: "Chesapeake Energy Arena"
+    }
   },
   {
     image:
@@ -239,7 +344,12 @@ const nbaTeamData = [
     name: "Magic",
     conference: "Eastern",
     division: "Southeast",
-    established: "1989"
+    established: "1989",
+    teamColor: "#0077C0", 
+    homeVenue: {
+      id: null,
+      name: "Amway Center"
+    }
   },
   {
     image:
@@ -250,7 +360,12 @@ const nbaTeamData = [
     name: "76ers",
     conference: "Eastern",
     division: "Atlantic",
-    established: "1949"
+    established: "1949",
+    teamColor: "#006BB6", 
+    homeVenue: {
+      id: null,
+      name: "Wells Fargo Center"
+    }
   },
   {
     image:
@@ -261,7 +376,12 @@ const nbaTeamData = [
     name: "Suns",
     conference: "Western",
     division: "Pacific",
-    established: "1968"
+    established: "1968",
+    teamColor: "#1D1160", 
+    homeVenue: {
+      id: null,
+      name: "Talking Stick Resort Arena"
+    }
   },
   {
     image:
@@ -272,7 +392,12 @@ const nbaTeamData = [
     name: "Trailblazers",
     conference: "Western",
     division: "Northwest",
-    established: "1970"
+    established: "1970",
+    teamColor: "#E03A3E", 
+    homeVenue: {
+      id: null,
+      name: "Moda Center"
+    }
   },
   {
     image:
@@ -283,7 +408,12 @@ const nbaTeamData = [
     name: "Kings",
     conference: "Western",
     division: "Pacific",
-    established: "1948"
+    established: "1948",
+    teamColor: "#5A2D81", 
+    homeVenue: {
+      id: null,
+      name: "Golden 1 Center"
+    }
   },
   {
     image:
@@ -294,7 +424,12 @@ const nbaTeamData = [
     name: "Spurs",
     conference: "Western",
     division: "Southwest",
-    established: "1976"
+    established: "1976",
+    teamColor: "#000000", 
+    homeVenue: {
+      id: null,
+      name: "AT&T Center"
+    }
   },
   {
     image:
@@ -305,7 +440,12 @@ const nbaTeamData = [
     name: "Raptors",
     conference: "Eastern",
     division: "Atlantic",
-    established: "1995"
+    established: "1995",
+    teamColor: "#CE1141", 
+    homeVenue: {
+      id: null,
+      name: "Scotiabank Arena"
+    }
   },
   {
     image:
@@ -316,7 +456,12 @@ const nbaTeamData = [
     name: "Jazz",
     conference: "Western",
     division: "Northwest",
-    established: "1974"
+    established: "1974",
+    teamColor: "#002B5C", 
+    homeVenue: {
+      id: null,
+      name: "Vivint Smart Home Arena"
+    }
   },
   {
     image:
@@ -327,7 +472,12 @@ const nbaTeamData = [
     name: "Wizards",
     conference: "Eastern",
     division: "Southeast",
-    established: "1961"
+    established: "1961",
+    teamColor: "#E31837", 
+    homeVenue: {
+      id: null,
+      name: "Capital One Arena"
+    }
   }
 ];
 

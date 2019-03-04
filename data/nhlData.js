@@ -7,7 +7,7 @@ const nhlData = [
     conference: "Western",
     division: "Pacific",
     established: 1993,
-    teamColor: "#F47A38",
+    teamColor: "#F47A38", 
     homeVenue: {
       id: 8,
       name: "Honda Center"
