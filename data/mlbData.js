@@ -1,6 +1,6 @@
 const mlbData = [
   {
-    id: null,
+    id: 140,
     city: "Arizona",
     name: "Diamondbacks",
     abbreviation: "ARI",
@@ -14,7 +14,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 130,
     city: "Atlanta",
     name: "Braves",
     abbreviation: "ATL",
@@ -28,7 +28,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 111,
     city: "Baltimore",
     name: "Orioles",
     abbreviation: "BAL",
@@ -42,7 +42,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 113,
     city: "Boston",
     name: "Red Sox",
     abbreviation: "BOS",
@@ -56,7 +56,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 131,
     city: "Chicago",
     name: "Cubs",
     abbreviation: "CHC",
@@ -70,7 +70,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 119,
     city: "Chicago",
     name: "White",
     abbreviation: "CWS",
@@ -84,7 +84,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 135,
     city: "Cincinnati",
     name: "Reds",
     abbreviation: "CIN",
@@ -98,7 +98,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 116,
     city: "Cleveland",
     name: "Indians",
     abbreviation: "CLE",
@@ -112,7 +112,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 138,
     city: "Colorado",
     name: "Rockies",
     abbreviation: "COL",
@@ -126,7 +126,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 117,
     city: "Detroit",
     name: "Tigers",
     abbreviation: "DET",
@@ -140,7 +140,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 122,
     city: "Houston",
     name: "Astros",
     abbreviation: "HOU",
@@ -154,7 +154,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 118,
     city: "Kansas City",
     name: "Royals",
     abbreviation: "KC",
@@ -168,8 +168,8 @@ const mlbData = [
     }
   },
   {
-    id: null,
-    city: "Los Angelese",
+    id: 124,
+    city: "Los Angeles",
     name: "Angels of Anaheim",
     abbreviation: "LAA",
     conference: "American",
@@ -182,7 +182,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 137,
     city: "Los Angeles",
     name: "Dodgers",
     abbreviation: "LAD",
@@ -196,7 +196,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 128,
     city: "Miami",
     name: "Marlins",
     abbreviation: "MIA",
@@ -210,7 +210,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 134,
     city: "Milwaukee",
     name: "Brewers",
     abbreviation: "MIL",
@@ -224,7 +224,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 120,
     city: "Minnesota",
     name: "Twins",
     abbreviation: "MIN",
@@ -238,7 +238,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 127,
     city: "New York",
     name: "Mets",
     abbreviation: "NYM",
@@ -252,7 +252,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 114,
     city: "New York",
     name: "Yankees",
     abbreviation: "NYY",
@@ -266,7 +266,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 125,
     city: "Oakland",
     name: "Athletics",
     abbreviation: "OAK",
@@ -280,7 +280,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 129,
     city: "Philadelphia",
     name: "Phillies",
     abbreviation: "PHI",
@@ -294,7 +294,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 132,
     city: "Pittsburgh",
     name: "Pirates",
     abbreviation: "PIT",
@@ -308,7 +308,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 133,
     city: "St. Louis",
     name: "Cardinals",
     abbreviation: "STL",
@@ -322,7 +322,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 139,
     city: "San Diego",
     name: "Padres",
     abbreviation: "SD",
@@ -336,7 +336,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 136,
     city: "San Francisco",
     name: "Giants",
     abbreviation: "SF",
@@ -350,7 +350,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 123,
     city: "Seattle",
     name: "Mariners",
     abbreviation: "SEA",
@@ -364,7 +364,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 115,
     city: "Tampa Bay",
     name: "Rays",
     abbreviation: "TB",
@@ -378,7 +378,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 121,
     city: "Texas",
     name: "Rangers",
     abbreviation: "TEX",
@@ -392,7 +392,7 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 112,
     city: "Toronto",
     name: "Blue Jays",
     abbreviation: "TOR",
@@ -406,10 +406,10 @@ const mlbData = [
     }
   },
   {
-    id: null,
+    id: 126,
     city: "Washington",
     name: "Nationals",
-    abbreviation: "WSH",
+    abbreviation: "WAS",
     conference: "National",
     division: "NL East",
     established: 1969,
